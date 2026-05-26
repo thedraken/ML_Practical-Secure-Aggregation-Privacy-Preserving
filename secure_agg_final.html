@@ -26,6 +26,7 @@
         --gr50: #f0fdf4;
         --gr100: #dcfce7;
         --gr200: #bbf7d0;
+        --gr300: #86efac;
         --gr500: #22c55e;
         --gr600: #16a34a;
         --gr700: #15803d;
@@ -63,7 +64,7 @@
       body {
         background: var(--g50);
         color: var(--g800);
-        font-family: var(--sans);
+        font-family: var(--sans), sans-serif;
         font-size: 14px;
         line-height: 1.6;
       }
@@ -104,20 +105,20 @@
 
       .tb-title {
         font-weight: 600;
-        font-size: 13.5px;
+        font-size: 14px;
         color: var(--g800);
       }
 
       .tb-sub {
         font-size: 11px;
         color: var(--g400);
-        font-family: var(--mono);
+        font-family: var(--mono), monospace;
       }
 
       .tb-badge {
         font-size: 11px;
         color: var(--g500);
-        font-family: var(--mono);
+        font-family: var(--mono), monospace;
         background: var(--g100);
         border: 1px solid var(--g200);
         padding: 3px 10px;
@@ -166,7 +167,7 @@
         border-radius: 8px;
         cursor: pointer;
         transition: all .15s;
-        font-size: 12.5px;
+        font-size: 13px;
         color: var(--g600);
         margin-bottom: 2px;
       }
@@ -363,17 +364,17 @@
 
       .uc-a {
         background: var(--b50);
-        border: 1.5px solid var(--b200);
+        border: 2px solid var(--b200);
       }
 
       .uc-b {
         background: var(--gr50);
-        border: 1.5px solid var(--gr200);
+        border: 2px solid var(--gr200);
       }
 
       .uc-c {
         background: var(--p50);
-        border: 1.5px solid var(--p100);
+        border: 2px solid var(--p100);
       }
 
       .uc.dropped {
@@ -389,11 +390,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(-12deg);
-        font-family: var(--mono);
+        font-family: var(--mono), monospace;
         font-size: 9px;
         color: var(--r600);
         font-weight: 700;
-        border: 1.5px solid var(--r500);
+        border: 2px solid var(--r500);
         padding: 2px 7px;
         border-radius: 3px;
         background: rgba(254, 226, 226, .85);
@@ -427,14 +428,14 @@
       }
 
       .uname {
-        font-size: 12.5px;
+        font-size: 13px;
         font-weight: 600;
         color: var(--g700);
         margin-bottom: .3rem;
       }
 
       .uval {
-        font-family: var(--mono);
+        font-family: var(--mono), monospace;
         font-size: 1.2rem;
         font-weight: 700;
       }
@@ -454,12 +455,12 @@
       .umeta {
         font-size: 10px;
         color: var(--g400);
-        font-family: var(--mono);
+        font-family: var(--mono), monospace;
         margin-top: .2rem;
       }
 
       .useeds {
-        font-family: var(--mono);
+        font-family: var(--mono), monospace;
         font-size: 11px;
         margin-top: .6rem;
         line-height: 1.8;
@@ -476,8 +477,8 @@
         color: #e2e8f0;
         border-radius: var(--rad);
         padding: 1rem 1.2rem;
-        font-family: var(--mono);
-        font-size: 12.5px;
+        font-family: var(--mono), monospace;
+        font-size: 13px;
         line-height: 1.95;
         margin: .7rem 0;
       }
@@ -621,7 +622,7 @@
       }
 
       .rl-val {
-        font-family: var(--mono);
+        font-family: var(--mono), monospace;
         font-size: 2rem;
         font-weight: 700;
         color: var(--gr700);
@@ -663,8 +664,8 @@
       }
 
       .srv-row {
-        font-family: var(--mono);
-        font-size: 12.5px;
+        font-family: var(--mono), monospace;
+        font-size: 13px;
         color: #e2e8f0;
         line-height: 1.95;
       }
@@ -673,7 +674,7 @@
       .tbl {
         width: 100%;
         border-collapse: collapse;
-        font-size: 12.5px;
+        font-size: 13px;
         margin: .7rem 0;
       }
 
@@ -713,7 +714,7 @@
         border: none;
         border-radius: 8px;
         padding: 7px 15px;
-        font-family: var(--sans);
+        font-family: var(--sans), sans-serif;
         font-size: 13px;
         font-weight: 500;
         cursor: pointer;
@@ -772,7 +773,7 @@
         align-items: center;
         gap: 7px;
         margin: .4rem 0;
-        font-size: 12.5px;
+        font-size: 13px;
         color: var(--g700);
       }
 
@@ -821,7 +822,6 @@
 
       /* PROOF STEPS */
       .ps {
-        border-left: 3px solid var(--g200);
         border-radius: 0 8px 8px 0;
         padding: .85rem 1rem;
         margin-bottom: .4rem;
@@ -832,14 +832,12 @@
       }
 
       .ps.active {
-        border-left-color: var(--b500);
         background: var(--b50);
         border-color: var(--b100);
         border-left-color: var(--b500);
       }
 
       .ps.proven {
-        border-left-color: var(--gr500);
         background: var(--gr50);
         border-color: var(--gr100);
         border-left-color: var(--gr500);
@@ -853,7 +851,7 @@
       }
 
       .ps-body {
-        font-size: 12.5px;
+        font-size: 13px;
         color: var(--g500);
         line-height: 1.6;
       }
@@ -885,7 +883,7 @@
         font-weight: 700;
         background: var(--g100);
         color: var(--g400);
-        border: 1.5px solid var(--g200);
+        border: 2px solid var(--g200);
         flex-shrink: 0;
       }
 
@@ -944,7 +942,7 @@
       .cmpc {
         border-radius: var(--rad);
         padding: 1rem;
-        font-size: 12.5px;
+        font-size: 13px;
       }
 
       .cmpc-g {
@@ -1019,8 +1017,8 @@
       }
 
       code {
-        font-family: var(--mono);
-        font-size: 11.5px;
+        font-family: var(--mono), monospace;
+        font-size: 12px;
         background: var(--g100);
         padding: 1px 5px;
         border-radius: 3px;
@@ -1370,13 +1368,15 @@
             <div class="cmp">
               <div class="cmpc cmpc-r">
                 <div class="cmpc-title">Before — not private</div>
-                <div style="font-family:var(--mono);font-size:12px;line-height:1.9;color:var(--g700)"> User sends: <span style="color:var(--r600)">raw gradient x</span>
+                <div style="font-family:var(--mono),monospace;font-size:12px;line-height:1.9;color:var(--g700)"> User
+                  sends: <span style="color:var(--r600)">raw gradient x</span>
                   <br> Server sees: individual value <br> Server learns: 5, 3, 7 separately
                 </div>
               </div>
               <div class="cmpc cmpc-g">
                 <div class="cmpc-title">After — private</div>
-                <div style="font-family:var(--mono);font-size:12px;line-height:1.9;color:var(--g700)"> User sends: <span style="color:var(--gr600)">masked value y</span>
+                <div style="font-family:var(--mono),monospace;font-size:12px;line-height:1.9;color:var(--g700)"> User
+                  sends: <span style="color:var(--gr600)">masked value y</span>
                   <br> Server sees: hidden value <br> Server learns: sum 15 only
                 </div>
               </div>
@@ -1634,7 +1634,9 @@
           <div class="ph">
             <div class="pt pt-b">Mechanism</div>
             <div class="ph-title">The Four Protocol Rounds</div>
-            <div class="ph-desc">How everything is organised into steps — what each user and the server does in each round.</div>
+            <div class="ph-desc">How everything is organized into steps — what each user and the server does in each
+              round.
+            </div>
           </div>
           <div class="card">
             <div class="dots" id="rdots">
@@ -1947,8 +1949,7 @@
     </div>
     <script>
       let cur = 0,
-        curR = 0,
-        hStep = 0;
+              curR = 0;
 
       function goPhase(n) {
         document.getElementById('phase-' + cur).classList.remove('active');
@@ -2085,7 +2086,7 @@ and learning Bob's real value.
 																																																																																	<span class="cc">Fix:</span>
 Every surviving user signs the survivor list and sends it to server.
 Server collects all signatures and broadcasts them.
-Now all users have proof everyone agreed on the same list.
+Now all users have the proof that everyone agreed on the same list.
 In the next round, users check these signatures before giving any pieces.
 If the list does not match → they refuse to participate.
 
@@ -2257,7 +2258,7 @@ Result = correct sum ✓
         exp.className = 'code gl fi';
         exp.style.cssText = 'font-size:12px;line-height:1.9';
         exp.innerHTML = txt;
-        rv.textContent = result;
+        rv.textContent = result.toString();
         rs.textContent = `Alive users · ${aliveX.join('+')} = ${expected}`;
       }
       renderRound(0);
