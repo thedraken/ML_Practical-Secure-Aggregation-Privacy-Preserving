@@ -1874,6 +1874,9 @@
               <div class="card-title">Computation cost vs privacy</div>
               <span class="cbadge cb-a">SECTION 7.2</span>
             </div>
+            <div>
+              <span><code>m = length of data vector, n = total users, d = dropped users</code></span>
+            </div>
             <table class="tbl">
               <thead>
                 <tr>
@@ -1913,7 +1916,12 @@
             <div class="info ir" style="margin-top:.5rem">
               <div class="info-title">Server cost with dropouts &mdash; Figure 8</div>
               500 users, 0% dropout &rarr; server takes ~2 seconds. <br/> 500 users, 30% dropout &rarr; server takes
-              ~143 seconds. <br/> Each dropped user forces many extra computations on the server side.
+              ~143 seconds. <br/> Each dropped user forces many extra computations on the server side.<br/>
+            </div>
+            <div class="info ip" style="margin-top:.5rem">
+              <div class="info-title">The Asymmetric Server Cost Equations</div>
+              <code>Cost = O(m(n - d) + md(n - d))</code><br/>
+              <span>The server's computational penalty is highly asymmetric. Processing a dropped user forces the server to compute <code>(n-d)</code> PRG expansions to rebuild and manage the pairwise masks. So, dropouts are actively punished by the design of the system</span>
             </div>
           </div>
           <div class="card">
